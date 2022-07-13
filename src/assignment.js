@@ -10,13 +10,30 @@ const assignment = {};
  * Calculate and return the sum of the numbers in an array.
  * If you did Challenge - 1, remove the comment in the line just after this function
  * 
- * @param {Array} arrayOfNumbers the array of numbers to sum
+ *@param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
+
+
 function sumOfNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
+//let arrayOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12]
+  sum= 0
+
+  for (let i= 0;i < arrayOfNumbers.lenght; i++) {
+      sum += arrayOfNumbers[i];
+  }
+
+
+  return sum;
+  
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+
+console.log(arrayOfNumbers.lenght)
+console.log(sumOfNumbers(arrayOfNumbers))
+
+
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -27,10 +44,30 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
+
 function countEvenNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
-}
-// assignment.countEvenNumbers = countEvenNumbers;
+  //declaring variables for array of numbers and array of even numbers
+const Numbers =[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+  var evenNumbers = [];
+
+  //logging the array of even numbers to the for reading 
+  //console.log(array of numbers)
+
+  //using the for.each function and modulus operation to filter even numbers and pushing into the evenNumbers variable
+  Numbers.forEach(number=>{
+    if(number % 2===0) {
+      evenNumbers.push(number);
+      
+    }
+  });
+//logging the array of even numbers back to the console for reading
+  console.log(evenNumbers.lenght)
+  // console.log(evenNumbers.lenght)
+  return evenNumbers.lenght;
+  }
+countEvenNumbers()
+ assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
